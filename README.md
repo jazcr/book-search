@@ -96,27 +96,27 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 * `Schemas` directory:
 
-	* `index.js`: Export your typeDefs and resolvers.
+	* `index.js`: Export your typeDefs and resolvers. ✔
 
-	* `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
+	* `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models. ✔
 
-		**Hint**: Use the functionality in the `user-controller.js` as a guide.
+		**Hint**: Use the functionality in the `user-controller.js` as a guide. ✔
 
-	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
+	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types: ✔
 
 		* `Query` type:
 
-			* `me`: Which returns a `User` type.
+			* `me`: Which returns a `User` type. ✔
 		
 		* `Mutation` type:
 
-			* `login`: Accepts an email and password as parameters; returns an `Auth` type.
+			* `login`: Accepts an email and password as parameters; returns an `Auth` type. ✔
 
-			* `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
+			* `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.✔
 
-			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
+			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)✔
 
-			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
+			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type. ✔
 			
 		* `User` type:
 
@@ -128,7 +128,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			* `bookCount`
 
-			* `savedBooks` (This will be an array of the `Book` type.)
+			* `savedBooks` (This will be an array of the `Book` type.) ✔
 
 		* `Book` type:
 
@@ -142,13 +142,13 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			* `image`
 
-			* `link`
+			* `link` ✔
 
 		* `Auth` type:
 
 			* `token`
 
-			* `user` (References the `User` type.)
+			* `user` (References the `User` type.) ✔
 
 
 ### Front-End Specifications
