@@ -6,7 +6,7 @@ import {
   Card,
   Button,
 } from "react-bootstrap";
-import { useQuery, useMutation } from "@apollo/react-hooks";
+import { useQuery, useMutation } from "@apollo/client";
 
 import Auth from "../utils/auth";
 import { removeBookId, saveBookIds } from "../utils/localStorage";
@@ -14,7 +14,7 @@ import { GET_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
 
 const SavedBooks = () => {
-  // execute GET_ME query on load and save it to variable userData
+  // use query GET_ME once loaded
   const { loading, data } = useQuery(GET_ME);
   const userData = data?.me || [];
 
