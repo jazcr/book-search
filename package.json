@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "apollo-server-express": "^3.3.0",
+    "mongoose": "^6.0.7",
     "validator": "^13.6.0"
   }
 }
